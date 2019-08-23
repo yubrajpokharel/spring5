@@ -17,7 +17,7 @@ public class UserController {
   UserServive userServive;
 
   @GetMapping(value = {"/users"}, produces = MediaType.APPLICATION_JSON_VALUE)
-  public List<User> getUsers(){
+  public List<User> getUsers() {
     return userServive.getUsers();
   }
 

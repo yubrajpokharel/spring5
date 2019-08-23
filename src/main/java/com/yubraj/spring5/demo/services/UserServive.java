@@ -14,9 +14,7 @@ public class UserServive {
   @Autowired
   private UserRepo userRepo;
 
-
   public List<User> getUsers(){
     return userRepo.getUsers();
   }
-
 }
