@@ -37,7 +37,7 @@ public class DevOpsBootstrap implements ApplicationListener<ContextRefreshedEven
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
-        if(authorRepository.findAll().size() == 0) {
+        /*if(authorRepository.findAll().size() == 0) {
             Author jt = new Author();
             jt.setFirstName("yubraj");
             jt.setLastName("pokharel");
@@ -176,6 +176,6 @@ public class DevOpsBootstrap implements ApplicationListener<ContextRefreshedEven
             springCoreDevOps.getProductCategories().add(springBootCat);
 
             springCoreDevOps = productRepository.save(springCoreDevOps);
-        }
+        }*/
     }
 }
